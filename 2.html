@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1503269094014-238e74b0b63b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1503269094014-238e74b0b63b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your image path */
+            background-size: cover; /* Adjust to fit the screen */
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Full viewport height */
+            margin: 0;
+            
+            
+            
+        }
+       
+        #header a{
+            color:  gainsboro;
+            text-decoration: none;
+            font-size:medium;
+            font-weight: bold;
+            margin-right: 30px;
+            font-family: 'Montserrat', sans-serif;
+}
+
+        
+        #header{
+            padding-top: 40px;
+
+            padding-left: 70%;
+        }
+        
+        hr{
+            display: none;
+        }
+        #name{
+            color:gainsboro;
+            align-items: center;
+            justify-items: center;
+            padding-top: 210px;
+            font-weight: bolder;
+            font-size:50px;
+          
+    font-family: 'Poppins', sans-serif;
+        }
+
+
+        \*-------------------------------*
+        .container {
+            display: flex;
+            font-size: 2rem;
+            font-weight: bold;
+            position: relative;
+            white-space: nowrap;
+       
+            
+        }
+
+        .static-text {
+            display: inline-block;
+            font-weight: normal;
+            color: gainsboro;
+            margin-left: 650px;
+            font-size: xx-large;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .dynamic-text {
+            display: inline-block;
+            position: relative;
+            margin-left: 5px; /* Added space */
+           font-weight: normal;
+           color: gainsboro;
+           font-size: xx-large;
+           font-family: 'Poppins', sans-serif;
+        }
+
+        .cursor {
+            display: inline-block;
+            font-weight:lighter;
+            color: white;
+            animation: blink 0.6s infinite;
+            margin-left: 5px;
+            position: relative;
+            font-size: xx-large;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        -------------------------------------------------
+        .social-icons {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            
+           
+           
+        }
+        .social-icons a {
+    display: block; /* Makes each icon take full width */
+    font-size: 20px;
+    margin-bottom: 10px; /* Adds vertical space */
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    padding-left: 96%;
+}
+        .social-icons a:hover {
+            color: #f39c12; /* Changes color on hover */
+        }
+
+
+        @media (max-width: 480px) { 
+
+            #header a{
+            color:  gainsboro;
+            text-decoration: none;
+            font-size:medium;
+            font-weight: bold;
+            margin-right: 30px;
+            font-family: 'Montserrat', sans-serif;
+}
+
+        
+        #header{
+            padding-top: 40px;
+
+            padding-left: 7%;
+        }
+
+        #header a{
+
+             margin-right: 12px;
+        }
+
+            #name{
+            color:gainsboro;
+            
+            padding-top: 360px;
+            font-weight: bolder;
+            font-size:34px;
+            padding-left:0px;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        .static-text {
+            display: inline-block;
+            font-weight: normal;
+            color: gainsboro;
+            margin-left: 140px;
+            font-size: xx-large;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .dynamic-text {
+            display: inline-block;
+            position: relative;
+            margin-left: 5px; /* Added space */
+           font-weight: normal;
+           color: gainsboro;
+           font-size: xx-large;
+           font-family: 'Poppins', sans-serif;
+        }
+
+        .social-icons {
+            display:flex;
+            justify-content: center;
+            
+           
+           
+        }
+        .social-icons a {
+    display: block; /* Makes each icon take full width */
+    font-size: 20px;
+    margin-top: 240px; /* Adds vertical space */
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    padding-left:  5%;
+}
+
+
+    
+     hr{
+        display: block;
+        margin-left: 6%;
+        margin-right: 6%;
+        border-color: gainsboro;
+        opacity: 0.6;
+        margin-top: 10px;
+        border-style:outset;
+     }
+         }
+
+        
+            
+    
+    </style>
+</head>
+<body>
+ 
+    <div id="header">
+        
+        <a href="">About</a>
+        <a href="">Resume</a>
+        <a href="">Portfolio</a>
+        <a href="">Blog</a>
+        <a href="">Contact</a>
+    </div>
+
+
+    <hr>
+
+    <div id="name">
+        <h1>Alex Austin</h1>
+    </div>
+ 
+    <div class="container">
+        <span class="static-text">I'm a</span>
+        <span class="dynamic-text" id="dynamic-text">Developer</span>
+        <span class="cursor">|</span>
+    </div>
+
+    <div class="social-icons">
+     
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a> 
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        
+    </div>
+    <script>
+        const dynamicTextElement = document.getElementById("dynamic-text");
+        const cursorElement = document.querySelector(".cursor");
+
+        const words = ["Developer", "Designer","Freelancer"];
+        let index = 0;
+        let charIndex = words[index].length;
+        let isDeleting = true;
+
+        function updateText() {
+            let currentWord = words[index];
+
+            if (isDeleting) {
+                dynamicTextElement.textContent = currentWord.substring(0, charIndex);
+                charIndex--;
+
+                cursorElement.style.transform = `translateX(${charIndex * -10}px)`; // Move cursor left
+
+                if (charIndex < 0) {
+                    isDeleting = false;
+                    index = (index + 1) % words.length;
+                    setTimeout(updateText, 500); // Pause before typing new word
+                    return;
+                }
+            } else {
+                dynamicTextElement.textContent = currentWord.substring(0, charIndex);
+                charIndex++;
+
+                cursorElement.style.transform = `translateX(${charIndex * -10}px)`; // Move cursor right
+
+                if (charIndex > currentWord.length) {
+                    setTimeout(() => {
+                        isDeleting = true;
+                        updateText();
+                    }, 1000); // Pause before deleting
+                    return;
+                }
+            }
+
+            setTimeout(updateText, isDeleting ? 50 : 100); // Speed: Deleting is faster
+        }
+
+        updateText(); // Start animation
+    </script>
+</body>
+</html>
