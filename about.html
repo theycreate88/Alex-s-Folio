@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 60px;
+            background-color: rgb(16,16,16);
+            color: gainsboro;
+        }
+        body p{
+            color:rgb(159, 159, 159);
+        }
+        #heading p{ 
+           
+            color:rgb(159, 159, 159);
+            font-weight: 400;
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        #heading h1{
+            font-size:  46px;
+            font-weight:700;
+            margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif;
+            color: rgb(240, 240, 240);
+        }
+       
+        
+        /* Moving line style */
+        .container {
+            width: 6%; /* Reduced width for the line */
+            height: 5px;
+            background-color:#049b63;
+            overflow: hidden;
+            margin: 20px auto; /* Centers the container with margin */
+            position: relative; /* Needed to position the ring relative to the line */
+        }
+
+        .line-wrapper {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 5px;
+            display: flex;
+            align-items: center;
+            animation: moveLine 5s linear infinite;
+        }
+
+        .ring {
+            width: 10px;
+            height: 20px;
+
+            border: 3px solid rgb(16,16,16);
+            border-radius: 50%;
+            background-color:  #049b63;
+            position: absolute; /* Position the ring directly within the container */
+            left: 50%; /* Align the ring to the center */
+            top: -8px; /* Slightly adjust the vertical position to align the ring with the line */
+            transform: translateX(-50%);
+        }
+
+        @keyframes moveLine {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+        
+        #about{
+            display: flex;
+            text-align: left;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.5;
+            
+           
+        }
+        #aboutimg{
+          
+            margin-left: 110px;
+            margin-top: 100px;
+        }
+        
+        #abouttext{
+            margin-left: 80px;
+            margin-top: 120px;
+        }
+        #abouttext h1{
+         
+            font-size: 24px;
+            color: rgb(0, 158, 102);
+            font-weight: 500;
+           
+           
+        }
+        #abouttext h2{
+         
+         font-size: 31px;
+         color: rgb(240, 240, 240);
+         font-weight: 700;
+         text-align: left;
+              
+     }
+
+     #abouttext p{
+        color: rgb(159, 159, 159);
+     }
+
+     hr{
+     
+        opacity: 0.2;
+        margin-top: 30px;
+     }
+
+     #details{
+
+        display: flex;
+         padding-top: 40px;
+         flex-wrap: wrap;
+         line-height: 2.5;
+     }
+
+     #details h3{
+        font-size: 15px;
+        font-weight: 400;
+
+     }
+
+     #details p{
+        padding-left: 10px;
+        margin-right: 200px;
+
+     }
+
+     br {
+    width: 100%;  /* Forces the next items to start on a new line */
+    content: "";  /* Required for compatibility */
+    display: block;
+}
+
+#line2{
+    padding-left: 75px;
+}
+
+#details #email{
+    color:rgb(0, 158, 102) ;
+    
+}
+
+#cvbutton{
+
+    display: inline-block;
+    background-color:rgb(0, 158, 102) ;
+    text-decoration: none;
+    height: 45px;
+    width: 170px;
+    border-radius: 40px;
+    padding-top: 7px;
+    padding-left: 40px;
+  
+    font-size: 14px;
+    color: rgb(240, 240, 240);
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+  #dash{
+    padding-top: 34px;
+    opacity: 0.2;
+    
+  }
+
+  .social-icons {
+            display:flex;
+           
+            text-align: left;
+         
+           
+        }
+        .social-icons a {
+    display: block; /* Makes each icon take full width */
+    font-size: 20px;
+    margin-top: 40px; /* Adds vertical space */
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    padding-left:  10%;
+    text-align: left;
+}
+
+#services{
+    padding-left: 110px;
+    padding-top: 130px;
+    text-align: left;
+}
+
+#services h1{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 30px;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+#serviceslist1{
+    margin-left: 110px;
+    display: flex;
+}
+
+#serviceslist2{
+    margin-left: 110px;
+display: flex;
+}
+
+.service{
+    
+    height: 250px;
+    width:  350px;
+    background-color: 
+    rgb(24,20,20);
+    margin-right: 40px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    box-shadow: black;
+  
+    background-image: url('https://i.pinimg.com/originals/46/0c/af/460cafc4979bd9239fa280b409aa0178.jpg');
+    background-size: cover; /* Adjust to fit the screen */
+            background-position: center;
+            background-repeat: no-repeat;
+           
+}
+
+ #testimonials{
+    padding-left: 110px;
+    padding-top: 120px;
+    text-align: left;
+ }
+
+ #testimonials h1{
+
+    padding-top: 30px;
+    font-family: 'Poppins', sans-serif;
+ }
+
+ #testimonial{
+    margin-left: 110px;
+    display: flex;
+ }
+
+ .testim{
+    height: 260px;
+    width:  550px;
+    background-color: 
+    rgb(24,20,20);
+    margin-right: 40px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    box-shadow: black;
+
+ }
+
+ #plans{
+
+    display: flex;
+    margin-left: 110px;
+ }
+
+ #plan{
+    text-align: left;
+    padding-left: 110px;
+    padding-top: 120px;
+
+ }
+
+ #plan h1{
+ padding-top: 30px;
+ font-family: 'Poppins', sans-serif;
+ font-size: 38px;
+ font-weight: 700;
+ }
+ .plans{
+    padding-top: 30px;
+    height: 600px;
+    width:  350px;
+    background-color: rgba(22,22,22,255);
+    margin-right: 40px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    box-shadow: black;
+    line-height: 2.5;
+ }
+
+ .plans h1{
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 15px;
+ }
+
+ .price{
+    font-size: 24px;
+    font-weight: 300;
+ }
+
+ .planbutton{
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    height: 40px;
+    color: white;
+    width: 120px;
+    border-radius: 20px;
+    background-color:rgb(0, 158, 102) ;
+    align-content: center;
+    justify-content: center;
+ }
+
+ #plan3_h1{
+
+    margin-top: 8px;
+ }
+ @media (max-width: 480px){
+    .container {
+        width: 40%;}
+    #about{
+        flex-direction: column;
+        padding-left: 10px;
+    }
+
+    #aboutimg{  padding-left: 0px;
+        margin-left: 0px;
+      }
+        #profile{
+             align-self: flex-start;
+            border: 1px;
+            border-radius: 50%;
+ 
+            height:250px ;
+            width: 250px;
+        }
+
+          
+        #abouttext{
+            margin-left: 0;
+            margin-top: 120px;
+        }
+        
+        #abouttext br{
+            display: none;
+        }
+        #abouttext h1{
+         
+            font-size: 20px;
+            color: rgb(0, 158, 102);
+            font-weight: 500;
+           
+           
+        }
+        #abouttext h2{
+         padding-top: 5px;
+         font-size: 22px;
+         color: rgb(240, 240, 240);
+         font-weight: 700;
+         text-align: left;
+         padding-bottom: 5px;
+              
+     }
+     
+      
+     #details{
+
+display: flex;
+ padding-top: 40px;
+ flex-wrap: wrap;
+ line-height: 2.5;
+ 
+}
+
+#details h3{
+font-size: 15px;
+font-weight: 400;
+display: none;
+
+}
+
+#details p{
+padding-left: 10px;
+display: none;
+
+}
+
+ 
+
+#line2{
+padding-left: 75px;
+}
+
+#details #email{
+color:rgb(0, 158, 102) ;
+display: none;
+}
+
+
+.social-icons {
+            display:flex;
+            padding-left: 5px;
+          
+           
+        }
+
+
+        #services{
+    padding-left: 0px;
+    padding-top: 230px;
+    text-align: left;
+}
+
+#services h1{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 30px;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+#serviceslist1{
+    margin-left:0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#serviceslist2{
+    margin-left:0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service{
+    
+    height: 250px;
+    width:  350px;
+    background-color: 
+    rgb(24,20,20);
+    margin-right: 40px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    box-shadow: black;
+  
+    background-image: url('https://i.pinimg.com/originals/46/0c/af/460cafc4979bd9239fa280b409aa0178.jpg');
+    background-size: cover; /* Adjust to fit the screen */
+            background-position: center;
+            background-repeat: no-repeat;
+           
+}
+
+#testimonials{
+    padding-left:0px;
+    padding-top: 120px;
+    text-align: left;
+ }
+
+ #testimonials h1{
+
+    padding-top: 30px;
+    font-family: 'Poppins', sans-serif;
+ }
+
+ #testimonial{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+
+ }
+
+ .testim{
+    height: 260px;
+    width:  350px;
+    background-color:  rgb(24,20,20);
+    margin-right: 40px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    box-shadow: black;
+
+ }
+
+ #plans{
+
+display: flex;
+margin-left: 0px;
+flex-direction: column;
+}
+
+#plan{
+text-align: left;
+padding-left: 0px;
+padding-top: 120px;
+
+}
+
+#plan h1{
+padding-top: 30px;
+font-family: 'Poppins', sans-serif;
+}
+.plans{
+height: 550px;
+width:  350px;
+background-color: 
+rgb(24,20,20);
+margin-right: 40px;
+margin-bottom: 30px;
+margin-top: 40px;
+box-shadow: black;
+
+}
+ }
+ 
+
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <p>Get To Know Me</p>
+        <h1>About Me</h1>
+    </div>
+
+    <!-- Moving line below heading -->
+    <div class="container">
+        <div class="line-wrapper">
+            <div class="ring"></div>
+        </div>
+    </div>
+    <div id="about"> 
+    <div id="aboutimg"> <img src="https://kaleidoscopic-pie-2341a3.netlify.app/template/img/info-img.jpg" alt="" height="500px" id="profile"></div>
+    
+    <div id="abouttext">
+        <h1>Who am i?</h1><br>
+        <h2>I'm Emma Smith, a visual UX/UI Designer <br>and Web Developer</h2><br>
+        <p>I am a freelancer based in the United Kingdom and i have been building noteworthy <br>
+        UX/UI designs and websites for years, which comply with the latest design trends. I help <br>
+        convert a vision and an idea into meaningful and useful products. Having a sharp eye for <br>
+        product evolution helps me prioritize tasks, iterate fast and deliver faster.</p>
+        <br> 
+        <hr>
+
+        <div id="details">
+   
+            <h3>Name:</h3><p>Alex Austin</p><h3>Email:</h3><p id="email">alex@gmail.com</p><br>
+            <h3>Age:</h3><p>21</p><h3 id="line2">From:</h3><p>Tokyo,Japan</p> 
+            <a href="" id="cvbutton">Download CV  </a>  <p id="dash">_________</p> <div class="social-icons">
+     
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a> 
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                
+            </div>
+            </div>
+           
+    </div>
+    </div>
+    <div id="services">
+        <p>Services i offer to my clients</p>
+        <h1>My Services</h1>
+    </div>
+    
+    <div id="serviceslist1">
+
+        <div class="service"></div>
+        <div class="service"></div>
+        <div class="service"></div>
+    </div>
+    
+    <div id="serviceslist2">
+
+        <div class="service"></div>
+        <div class="service"></div>
+        <div class="service"></div>
+    </div>
+    
+    <div id="testimonials"><p>What my clients think about me</p>
+     <h1>Testimonials</h1></div>
+
+     <div id="testimonial">
+        <div class="testim"></div>
+        <div class="testim"></div>
+     </div>
+
+     <div id="plan"><p>Get started with my services</p>
+    <h1>Choose a Plan</h1></div>
+
+    <div id="plans">
+
+        <div class="plans"><img src="drop.png" alt=""><h1>Standard</h1><p class="price">$19/month</p>
+            <p>Mobile App Design <br>
+            Responsive Design<br>
+            Database Development<br>
+            Web Design<br>
+            24/7 Support</p>
+            <a href="" class="planbutton">Get Standard</a></div>
+        <div class="plans"><img src="rocket.png" alt=""><h1>Professional</h1><p class="price">$29/month</p> <p>Mobile App Design <br>
+            Responsive Design<br>
+            Database Development<br>
+            Web Design<br>
+            24/7 Support</p>
+            <a href="" class="planbutton">Get Pro</a></div>
+        <div class="plans"><img src="orbit.png" alt=""><h1 id="plan3_h1">Business</h1><p class="price">$39/month</p> <p>Mobile App Design <br>
+            Responsive Design<br>
+            Database Development<br>
+            Web Design<br>
+            24/7 Support</p>
+            <a href="" class="planbutton">Get Business</a></div>
+    </div>
+</body>
+</html>
