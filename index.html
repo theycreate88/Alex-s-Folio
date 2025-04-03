@@ -116,8 +116,8 @@
             color: #f39c12; /* Changes color on hover */
         }
 
-
-        @media (max-width: 480px) { 
+  @media (max-width: 480px)
+       { 
 
             #header a{
             color:  gainsboro;
@@ -140,7 +140,6 @@
              margin-right: 12px;
         }
 
-         
             #name{
             color:gainsboro;
             
@@ -152,7 +151,7 @@
 
         }
 
-       .static-text {
+        .static-text {
             display: inline-block;
             font-weight: normal;
             color: gainsboro;
@@ -178,7 +177,7 @@
            
            
         }
-   .social-icons a {
+        .social-icons a {
     display: block; /* Makes each icon take full width */
     font-size: 20px;
     margin-top: 40px; /* Adds vertical space */
@@ -210,11 +209,13 @@
  
     <div id="header">
         
-        <a href="">About</a>
-        <a href="">Resume</a>
-        <a href="">Portfolio</a>
-        <a href="">Blog</a>
-        <a href="">Contact</a>
+         
+            <a href="about.html" class="page-link">About</a>
+            <a href="resume.html" class="page-link">Resume</a>
+            <a href="portfolio.html" class="page-link">Portfolio</a>
+            <a href="blog.html" class="page-link">Blog</a>
+            <a href="contact.html" class="page-link">Contact</a>
+        
     </div>
 
 
@@ -282,6 +283,15 @@
         }
 
         updateText(); // Start animation
+
+
+        document.querySelectorAll('.page-link').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                localStorage.setItem("nextPage", this.getAttribute("href"));
+                window.location.href = "transition.html";
+            });
+        });
     </script>
 </body>
 </html>
