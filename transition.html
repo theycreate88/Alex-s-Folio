@@ -16,7 +16,7 @@
         html, body {
             width: 100vw;
             height: 100vh;
-            overflow: hidden;
+            overflow: hidden; /* Remove scrollbars from the page */
             background-color: black;
             display: flex;
             align-items: center;
@@ -45,6 +45,7 @@
             height: 100vh;
             border: none;
             display: block;
+            overflow: auto; /* Allow scrolling inside the iframe */
         }
 
         /* Close Button */
@@ -59,7 +60,6 @@
             cursor: pointer;
             color: white;
         }
-
     </style>
 </head>
 <body onload="showPage()">
@@ -67,7 +67,7 @@
     <!-- Overlay Page -->
     <div class="overlay-page" id="overlayPage">
         <span class="close-btn" onclick="closePage()">✕</span>
-        <iframe id="contentFrame" src=""></iframe>
+        <iframe id="contentFrame" src="" scrolling="auto"></iframe> <!-- Allow scrolling inside the iframe -->
     </div>
 
     <script>
