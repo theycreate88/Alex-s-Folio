@@ -111,6 +111,8 @@
           
             margin-left: 110px;
             margin-top: 100px;
+            border-bottom: 2px solid  rgb(0, 158, 102);
+            
         }
         
         #abouttext{
@@ -178,7 +180,10 @@
     color:rgb(0, 158, 102) ;
     
 }
-
+#cv_socials{
+    display: flex;
+    margin-top: 60px;
+}
 #cvbutton{
 
     display: inline-block;
@@ -189,11 +194,11 @@
     border-radius: 40px;
     padding-top: 7px;
     padding-left: 40px;
-  
+    margin-right: 60px;
     font-size: 14px;
     color: rgb(240, 240, 240);
     font-weight: 400;
-    margin-top: 40px;
+   
 }
 
   #dash{
@@ -212,13 +217,14 @@
         .social-icons a {
     display: block; /* Makes each icon take full width */
     font-size: 20px;
-    margin-top: 40px; /* Adds vertical space */
+    /* Adds vertical space */
     color: white;
     text-decoration: none;
     transition: 0.3s;
     padding-left:  10%;
     text-align: left;
 }
+
 
 #services{
     padding-left: 110px;
@@ -247,18 +253,21 @@ display: flex;
     
     height: 250px;
     width:  350px;
-    background-color: 
-    rgb(24,20,20);
+    background-color:  rgba(22,22,22,255);
     margin-right: 40px;
     margin-bottom: 30px;
     margin-top: 40px;
     box-shadow: black;
-  
-    background-image: url('https://i.pinimg.com/originals/46/0c/af/460cafc4979bd9239fa280b409aa0178.jpg');
+   
     background-size: cover; /* Adjust to fit the screen */
             background-position: center;
             background-repeat: no-repeat;
            
+}
+
+.service:hover{
+    border-bottom: 2px solid  ;
+    border-color:rgb(0, 158, 102) ; 
 }
 
  #testimonials{
@@ -281,8 +290,7 @@ display: flex;
  .testim{
     height: 260px;
     width:  550px;
-    background-color: 
-    rgb(24,20,20);
+    background-color: rgba(22,22,22,255);
     margin-right: 40px;
     margin-bottom: 30px;
     margin-top: 40px;
@@ -432,10 +440,20 @@ display: none;
 }
 
 
+#cv_socials{
+    display: flex;
+    flex-direction: column;
+  
+
+}
+
+#cvbutton{
+    margin-left: 40px;
+}
 .social-icons {
             display:flex;
             padding-left: 5px;
-          
+            padding-top: 30px;
            
         }
 
@@ -482,6 +500,7 @@ display: none;
             background-repeat: no-repeat;
            
 }
+
 
 #testimonials{
     padding-left:0px;
@@ -532,10 +551,9 @@ padding-top: 30px;
 font-family: 'Poppins', sans-serif;
 }
 .plans{
-height: 550px;
+height: 600px;
 width:  270px;
-background-color: 
-rgb(24,20,20);
+background-color:rgb(24,20,20);
 margin-right: 40px;
 margin-bottom: 30px;
 margin-top: 40px;
@@ -560,11 +578,11 @@ box-shadow: black;
         </div>
     </div>
     <div id="about"> 
-    <div id="aboutimg"> <img src="https://kaleidoscopic-pie-2341a3.netlify.app/template/img/info-img.jpg" alt="" height="500px" id="profile"></div>
+    <div id="aboutimg"> <img src="https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" height="500px" id="profile"></div>
     
     <div id="abouttext">
         <h1>Who am i?</h1><br>
-        <h2>I'm Emma Smith, a visual UX/UI Designer <br>and Web Developer</h2><br>
+        <h2>I'm Alex Austin, a visual UX/UI Designer <br>and Web Developer</h2><br>
         <p>I am a freelancer based in the United Kingdom and i have been building noteworthy <br>
         UX/UI designs and websites for years, which comply with the latest design trends. I help <br>
         convert a vision and an idea into meaningful and useful products. Having a sharp eye for <br>
@@ -575,8 +593,9 @@ box-shadow: black;
         <div id="details">
    
             <h3>Name:</h3><p>Alex Austin</p><h3>Email:</h3><p id="email">alex@gmail.com</p><br>
-            <h3>Age:</h3><p>21</p><h3 id="line2">From:</h3><p>Tokyo,Japan</p> 
-            <a href="" id="cvbutton">Download CV  </a>  <p id="dash">_________</p> <div class="social-icons">
+            <h3>Age:</h3><p>21</p><h3 id="line2">From:</h3><p>Tokyo,Japan</p> <br>
+            <div id="cv_socials">
+            <a href="" id="cvbutton">Download CV  </a>    <div class="social-icons">
      
                 <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a> 
@@ -586,6 +605,7 @@ box-shadow: black;
                 
             </div>
             </div>
+        </div>
            
     </div>
     </div>
