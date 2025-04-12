@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About</title>
+  <style>
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: black;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: black;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 60px;
+      background-color: rgb(16, 16, 16);
+      color: gainsboro;
+    }
+
+    #heading p {
+      color: rgb(159, 159, 159);
+      font-weight: 400;
+      font-size: 15px;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+
+    #heading h1 {
+      font-size: 46px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-family: 'Poppins', sans-serif;
+      color: rgb(240, 240, 240);
+    }
+
+    .container {
+      width: 6%;
+      height: 5px;
+      background-color: #049b63;
+      overflow: hidden;
+      margin: 20px auto;
+      position: relative;
+    }
+
+    .line-wrapper {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 5px;
+      display: flex;
+      align-items: center;
+      animation: moveLine 5s linear infinite;
+    }
+
+    .ring {
+      width: 10px;
+      height: 20px;
+      border: 3px solid rgb(16, 16, 16);
+      border-radius: 50%;
+      background-color: #049b63;
+      position: absolute;
+      left: 50%;
+      top: -8px;
+      transform: translateX(-50%);
+    }
+
+    @keyframes moveLine {
+      0% { left: -100%; }
+      100% { left: 100%; }
+    }
+
+    #nav {
+      padding-top: 70px;
+    }
+
+    #nav a {
+      text-decoration: none;
+      color: rgb(159, 159, 159);
+      margin-right: 20px;
+      font-weight: bolder;
+      padding-bottom: 6px;
+    }
+
+    #nav #all {
+      color: #049b63;
+      border-bottom: 2px solid #049b63;
+    }
+
+    #nav a:hover {
+      color: #049b63;
+      border-bottom: 2px solid #049b63;
+    }
+
+    #imagesdiv {
+      width: 90%;
+      margin: 40px auto;
+    }
+
+    .imagesdiv {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .img-wrapper {
+      width: 380px;
+      
+      overflow: hidden;
+    }
+
+    .img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+     
+    }
+    
+    @media (max-width: 480px){
+           
+        #heading h1{
+            
+            font-size:  46px;
+            font-weight:700;
+            margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif;
+            color: rgb(240, 240, 240);
+            text-align: center;
+        }
+
+        #heading p{
+           
+            text-align: center;
+             
+        }
+
+        .container {
+            width: 40%;
+        align-self: center;}
+
+        #nav {
+      padding-top: 70px;
+    }
+
+    #nav a {
+        
+      text-align: center;
+      text-decoration: none;
+      color: rgb(159, 159, 159);
+      margin-right: 15px;
+      font-weight: bolder;
+      padding-bottom: 6px;
+    }
+
+    .imagesdiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;               /* No gap between items */
+  margin: 0;
+  padding: 0;
+  font-size: 0;         /* Removes whitespace between inline elements */
+  
+}
+
+.img-wrapper {
+  
+  width: 50%;
+  margin-bottom: 0;
+  padding-right: 20px;
+  padding-bottom: 20px;
+      
+ 
+}
+
+.img-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+    
+
+    }
+
+  </style>
+</head>
+<body>
+  <div id="heading">
+    <p>Showcasing some of my best work</p>
+    <h1>Portfolio</h1>
+  </div>
+
+  <div class="container">
+    <div class="line-wrapper">
+      <div class="ring"></div>
+    </div>
+  </div>
+
+  <div id="nav">
+    <a href="#" id="all">All</a>
+    <a href="#" id="brands">Brand</a>
+    <a href="#" id="design">Design</a>
+    <a href="#" id="photos">Photos</a>
+  </div>
+
+  <div id="imagesdiv">
+    <div class="imagesdiv">
+      <div class="img-wrapper"><img src="img1.png" id="img1" /></div>
+      <div class="img-wrapper"><img src="img2.png" id="img2" /></div>
+      <div class="img-wrapper"><img src="img3.png" id="img3" /></div>
+      <div class="img-wrapper"><img src="img4.png" id="img4" /></div>
+      <div class="img-wrapper"><img src="img5.png" id="img5" /></div>
+      <div class="img-wrapper"><img src="img6.png" id="img6" /></div>
+    </div>
+  </div>
+
+  <script>
+    const brandbtn = document.querySelector("#brands");
+    const designbtn = document.querySelector("#design");
+    const photobtn = document.querySelector("#photos");
+    const allbtn = document.querySelector("#all");
+  
+    const images = {
+      img1: document.querySelector("#img1"),
+      img2: document.querySelector("#img2"),
+      img3: document.querySelector("#img3"),
+      img4: document.querySelector("#img4"),
+      img5: document.querySelector("#img5"),
+      img6: document.querySelector("#img6"),
+    };
+  
+    const imagesContainer = document.querySelector(".imagesdiv");
+    const buttons = [brandbtn, designbtn, photobtn, allbtn];
+  
+    function resetButtonStyles() {
+      buttons.forEach(btn => {
+        btn.style.color = "rgb(159, 159, 159)";
+        btn.style.borderBottom = "none";
+      });
+    }
+  
+    function showImages(idsToShow = []) {
+      Object.entries(images).forEach(([id, img]) => {
+        img.parentElement.style.display = idsToShow.includes(id) ? "block" : "none";
+      });
+    }
+  
+    allbtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      resetButtonStyles();
+      this.style.color = "#049b63";
+      this.style.borderBottom = "2px solid #049b63";
+      showImages(Object.keys(images));
+      imagesContainer.style.justifyContent = "center"; // center for All
+    });
+  
+    brandbtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      resetButtonStyles();
+      this.style.color = "#049b63";
+      this.style.borderBottom = "2px solid #049b63";
+      showImages(["img4", "img5"]);
+      imagesContainer.style.justifyContent = "flex-start"; // align left
+    });
+  
+    designbtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      resetButtonStyles();
+      this.style.color = "#049b63";
+      this.style.borderBottom = "2px solid #049b63";
+      showImages(["img1", "img3"]);
+      imagesContainer.style.justifyContent = "flex-start"; // align left
+    });
+  
+    photobtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      resetButtonStyles();
+      this.style.color = "#049b63";
+      this.style.borderBottom = "2px solid #049b63";
+      showImages(["img2", "img6"]);
+      imagesContainer.style.justifyContent = "flex-start"; // align left
+    });
+  </script>
+  
+</body>
+</html>
