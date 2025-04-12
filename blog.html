@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+
+::-webkit-scrollbar {
+      width: 12px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: black;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: black;
+    }
+        
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 60px;
+            background-color: rgb(16,16,16);
+            color: gainsboro;
+
+        }
+
+        #heading p{ 
+           
+            color:rgb(159, 159, 159);
+            font-weight: 400;
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        #heading h1{
+            font-size:  46px;
+            font-weight:700;
+            margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif;
+            color: rgb(240, 240, 240);
+        }
+       
+        
+        /* Moving line style */
+        .container {
+            width: 6%; /* Reduced width for the line */
+            height: 5px;
+            background-color:#049b63;
+            overflow: hidden;
+            margin: 20px auto; /* Centers the container with margin */
+            position: relative; /* Needed to position the ring relative to the line */
+        }
+
+        .line-wrapper {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 5px;
+            display: flex;
+            align-items: center;
+            animation: moveLine 5s linear infinite;
+        }
+
+        .ring {
+            width: 10px;
+            height: 20px;
+
+            border: 3px solid rgb(16,16,16);
+            border-radius: 50%;
+            background-color:  #049b63;
+            position: absolute; /* Position the ring directly within the container */
+            left: 50%; /* Align the ring to the center */
+            top: -8px; /* Slightly adjust the vertical position to align the ring with the line */
+            transform: translateX(-50%);
+        }
+
+        @keyframes moveLine {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+        
+    #div1{
+        display: flex;
+        margin-top: 100px;
+ 
+        margin-right: 150px;
+        margin-left: 150px;
+    }
+    
+    #div1 h1{
+        font-size: 20px;
+        padding-top: 10px;
+        font-weight: 700;
+        color: rgb(240, 240, 240);
+    }
+
+    #div1 p{
+        font-size: 16px;
+        line-height: 1.5;
+        padding-top: 10px;
+        color: rgb(159, 159, 159);
+    }
+    #div2{
+        display: flex;
+ 
+        margin-right: 150px;
+        margin-left: 150px;
+        margin-top: 40px;
+    }
+    
+    #div2 h1{
+        font-size: 20px;
+        padding-top: 10px;
+        font-weight: 700;
+        color: rgb(240, 240, 240);
+    }
+
+    #div2 p{
+        font-size: 16px;
+        line-height: 1.5;
+        padding-top: 10px;
+        color: rgb(159, 159, 159);
+    }
+    .img{
+        
+        margin-right: 40px;
+        margin-bottom: 50px;
+        text-align: left;
+    }
+    img{
+        height: 240px;
+        width: 400px;
+        border-radius: 3px;
+    }
+
+    @media (max-width: 480px){
+    
+
+        body {
+  overflow-x: hidden;
+}
+.container {
+            width: 40%;
+        align-self: center;}
+
+    #div1{
+        flex-direction: column;
+        padding-left: 20%;
+        padding-right: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+        justify-self: center;
+    }
+     
+    #div2{
+        flex-direction: column;
+        padding-left: 20%;
+        margin-right: 0px;
+        margin-left: 0px;
+        justify-self: center;
+        padding-right: 0px;
+    }
+    
+    
+    img{
+        height: 240px;
+        width: 350px;
+        border-radius: 3px;
+    }
+
+    
+    
+    }
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <p>Check out my latest blog posts</p>
+        <h1>My Blog</h1>
+    </div>
+
+    <!-- Moving line below heading -->
+    <div class="container">
+        <div class="line-wrapper">
+            <div class="ring"></div>
+        </div>
+    </div> 
+    
+    <div id="div1">
+        <div class="img"><img src="https://kaleidoscopic-pie-2341a3.netlify.app/template/img/post-1.jpg" alt="">
+            <h1>Top tools for Photographers</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+        </div>
+        <div class="img"><img src="https://kaleidoscopic-pie-2341a3.netlify.app/template/img/post-2.jpg" alt="">
+            <h1>Top tools for Photographers</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+        </div>
+        <div class="img"><img src="https://kaleidoscopic-pie-2341a3.netlify.app/template/img/post-3.jpg" alt="">
+            <h1>Top tools for Photographers</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+        </div>
+    </div>
+
+    <div id="div2">
+        <div class="img"><img src="https://kaleidoscopic-pie-2341a3.netlify.app/template/img/post-4.jpg" alt="">
+            <h1>Top tools for Photographers</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+        </div>
+        <div class="img"><img src="https://kaleidoscopic-pie-2341a3.netlify.app/template/img/post-5.jpg" alt="">
+            <h1>Top tools for Photographers</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+        </div>
+        <div class="img"><img src="https://kaleidoscopic-pie-2341a3.netlify.app/template/img/post-6.jpg" alt="">
+            <h1>Top tools for Photographers</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+        </div>
+    </div>
+</body>
+</html>
